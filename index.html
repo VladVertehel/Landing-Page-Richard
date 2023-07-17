@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +8,7 @@
 	<link rel="stylesheet" href="styles/fonts.css" />
 	<link rel="stylesheet" href="styles/style.css" />
 </head>
+
 <body>
 	<nav class="header_nav">
 		<div class="logo_container">
@@ -15,14 +17,16 @@
 			</a>
 		</div>
 		<div class="nav_links">
-				<a id="about_btn" href="#about" class="nav_link">About</a>
-				<a href="#features" class="nav_link">Features</a>
-				<a href="#how-to-use" class="nav_link">How to Use</a>
-				<a href="#download" class="nav_link">Download</a>
+			<a id="about_btn" href="#about" class="nav_link">About</a>
+			<a href="#features" class="nav_link">Features</a>
+			<a href="#how-to-use" class="nav_link">How to Use</a>
+			<a href="#download" class="nav_link">Download</a>
 		</div>
 	</nav>
 	<header class="header">
-		<img class="header_arrow" src="https://uploads-ssl.webflow.com/5af49de0dbb1e3637f2d8886/5b1437cbda3c5c3369fe4460_arrow.svg" alt="arrow">
+		<img class="header_arrow"
+			src="https://uploads-ssl.webflow.com/5af49de0dbb1e3637f2d8886/5b1437cbda3c5c3369fe4460_arrow.svg"
+			alt="arrow">
 		<div class="header_content">
 			<div class="header_title element-animation">
 				<h1>Momentum</h1>
@@ -32,17 +36,59 @@
 		</div>
 		<img class="header_img element-animation" src="img/header.png" alt="header">
 	</header>
-	
+
 	<section class="about" id="about">
 		<div class="about_container element-animation">
-			<p class="about_title">AENEAN CONSECTETUR PORTA</p>
+			<p class="title about_title">AENEAN CONSECTETUR PORTA</p>
 			<h2>Nullam quis risus eget urna mollis ornare vel eu leo.</h2>
 		</div>
 		<div class="about_img_wrap">
-			<img src="img/about.png" srcset="img/about.png 500w, img/about.png 800w, img/about.png 1080w, img/about.png 1600w, img/about.png 1903w" sizes="90vw" alt="about">
+			<img src="img/about.png"
+				srcset="img/about.png 500w, img/about.png 800w, img/about.png 1080w, img/about.png 1600w, img/about.png 1903w"
+				sizes="90vw" alt="about">
+		</div>
+	</section>
+
+	<section class="features">
+		<div class="features_container" id="features">
+			<div class="features_content element-animation">
+				<div class="title features_title">AENEAN CONSECTETUR</div>
+				<h2 style="color: #000;">Cay sociis nato que penatibus et</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+					tristique.</p>
+			</div>
+			<div class="features_img">
+				<img class="img2" src="img/features1.png" alt="features1" width="341">
+			</div>
+		</div>
+		<div class="features_container">
+			<div class="features_img">
+				<!-- <img src="img/features2.png" alt="features1" width="341"> -->
+				<img class="img2" src="img/features2.png" width="386"
+					srcset="img/features2.png 500w, img/features2.png 540w"
+					sizes="(max-width: 479px) 90vw, (max-width: 991px) 40vw, 25vw" alt="features2">
+			</div>
+			<div class="features_content element-animation">
+				<div class="title features_title">CONSECTULTRICIES</div>
+				<h2 style="color: #000;">Amet Ipsum</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+					tristique.</p>
+			</div>
+		</div>
+		<div class="features_container">
+			<div class="features_content element-animation">
+				<div class="title features_title">AENEAN CONSECTETUR PORTA</div>
+				<h2 style="color: #000;">Magna Porta Sit Bibendum</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+					tristique.</p>
+			</div>
+			<div class="features_img">
+				<img class="img2" src="img/features3.png" alt="features3" width="341">
+			</div>
 		</div>
 	</section>
 
 	<script src="script.js"></script>
 </body>
+
 </html>
