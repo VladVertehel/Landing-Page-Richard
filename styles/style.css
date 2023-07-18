@@ -308,6 +308,7 @@ h4 {
 
 .icons {
     padding: 0;
+    flex-direction: row;
 }
 
 .features_icons {
@@ -316,6 +317,15 @@ h4 {
     align-items: center;
     padding-right: 30px;
     padding-left: 30px;
-    width: auto;
+    width: 33.33%;
     flex-direction: column;
+}
+
+.features_numbers {
+    text-align: center;
+}
+
+.number {
+    font-size: 60px;
+    line-height: 90px;
 }
