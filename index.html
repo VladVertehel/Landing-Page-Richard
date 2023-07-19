@@ -7,6 +7,7 @@
 	<title>Landing page</title>
 	<link rel="stylesheet" href="styles/fonts.css" />
 	<link rel="stylesheet" href="styles/style.css" />
+	<link rel="stylesheet" href="css/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -63,7 +64,6 @@
 		</div>
 		<div class="features_container">
 			<div class="features_img">
-				<!-- <img src="img/features2.png" alt="features1" width="341"> -->
 				<img class="img2" src="img/features2.png" width="386"
 					srcset="img/features2.png 500w, img/features2.png 540w"
 					sizes="(max-width: 479px) 90vw, (max-width: 991px) 40vw, 25vw" alt="features2">
@@ -134,7 +134,7 @@
 		</div>
 
 		<div class="features_container" id="how-to-use">
-			<div class="features_content">
+			<div class="features_content element-animation">
 				<div class="title">AENEAN CONSECTETUR PORTA</div>
 				<h2 style="color: #000;">Sem Risus Elit Vestibulum</h2>
 				<p>Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor
@@ -159,7 +159,7 @@
 					sizes="(max-width: 479px) 90vw, (max-width: 767px) 40vw, (max-width: 991px) 45vw, 27vw"
 					alt="photo2">
 			</div>
-			<div class="features_content">
+			<div class="features_content element-animation">
 				<div class="title">AENEAN CONSECTETUR PORTA</div>
 				<h2 style="color: #000;">Parturient Tortor</h2>
 				<p>Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor
@@ -171,8 +171,84 @@
 					Etiam porta sem malesuada magna mollis euismod.</p>
 			</div>
 		</div>
+
+		<div class="element-animation slider">
+			<img src="https://uploads-ssl.webflow.com/5af49de0dbb1e3637f2d8886/5b14481dda3c5c4b9bfe5147_quotation.svg"
+				width="58" alt="" class="quote-icon">
+			<div class="slider_container">
+				<swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true"
+					loop="true">
+					<swiper-slide>
+						<h3>HeadNulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus,
+							nisi erat
+							porttitor ligula, eget
+							lacinia odio sem nec elit. Pus sit amet fermentum. Donec id elit non mi porta gravida at
+							eget
+							metus.
+							Etiam porta sem
+							malesuada magna mollis euismod.ing</h3>
+						<div>
+							<p>Joshua Home</p>
+							<p><strong style="color: #6b6b6b;">New York Times</strong></p>
+						</div>
+					</swiper-slide>
+
+					<swiper-slide>
+						<h3>HeadNulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi
+							erat
+							porttitor ligula, eget
+							lacinia odio sem nec elit. Pus sit amet fermentum. Donec id elit non mi porta gravida at
+							eget
+							metus.
+							Etiam porta sem
+							malesuada magna mollis euismod.ing</h3>
+						<div>
+							<p>Nulla vitae elit libero, a pharetra augue.</p>
+							<p><strong style="color: #6b6b6b;">New York Times</strong></p>
+						</div>
+					</swiper-slide>
+				</swiper-container>
+
+
+
+				<!-- <div class="mySwiper swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<h3>HeadNulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus,
+							nisi erat
+							porttitor ligula, eget
+							lacinia odio sem nec elit. Pus sit amet fermentum. Donec id elit non mi porta gravida at
+							eget
+							metus.
+							Etiam porta sem
+							malesuada magna mollis euismod.ing</h3>
+						<div>
+							<p>Joshua Home</p>
+							<p><strong style="color: #6b6b6b;">New York Times</strong></p>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<h3>HeadNulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi
+							erat
+							porttitor ligula, eget
+							lacinia odio sem nec elit. Pus sit amet fermentum. Donec id elit non mi porta gravida at
+							eget
+							metus.
+							Etiam porta sem
+							malesuada magna mollis euismod.ing</h3>
+						<div>
+							<p>Nulla vitae elit libero, a pharetra augue.</p>
+							<p><strong style="color: #6b6b6b;">New York Times</strong></p>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div> -->
+			</div>
+		</div>
 	</section>
 
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
 	<script src="script.js"></script>
 </body>
 
