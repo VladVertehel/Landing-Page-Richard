@@ -7,7 +7,7 @@
 	<title>Landing page</title>
 	<link rel="stylesheet" href="styles/fonts.css" />
 	<link rel="stylesheet" href="styles/style.css" />
-	<link rel="stylesheet" href="css/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="styles/itc-slider.css">
 </head>
 
 <body>
@@ -175,80 +175,52 @@
 		<div class="element-animation slider">
 			<img src="https://uploads-ssl.webflow.com/5af49de0dbb1e3637f2d8886/5b14481dda3c5c4b9bfe5147_quotation.svg"
 				width="58" alt="" class="quote-icon">
-			<div class="slider_container">
-				<swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true"
-					loop="true">
-					<swiper-slide>
-						<h3>HeadNulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus,
-							nisi erat
-							porttitor ligula, eget
-							lacinia odio sem nec elit. Pus sit amet fermentum. Donec id elit non mi porta gravida at
-							eget
-							metus.
-							Etiam porta sem
-							malesuada magna mollis euismod.ing</h3>
-						<div>
-							<p>Joshua Home</p>
-							<p><strong style="color: #6b6b6b;">New York Times</strong></p>
+
+			<div class="itc-slider" data-slider="itc-slider">
+				<div class="itc-slider-wrapper">
+					<div class="itc-slider-items">
+						<div class="itc-slider-item">
+							<h3>HeadNulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus,
+								nisi erat
+								porttitor ligula, eget
+								lacinia odio sem nec elit. Pus sit amet fermentum. Donec id elit non mi porta gravida at
+								eget
+								metus.
+								Etiam porta sem
+								malesuada magna mollis euismod.ing</h3>
+							<div>
+								<p>Joshua Home</p>
+								<p><strong style="color: #6b6b6b;">New York Times</strong></p>
+							</div>
 						</div>
-					</swiper-slide>
-
-					<swiper-slide>
-						<h3>HeadNulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi
-							erat
-							porttitor ligula, eget
-							lacinia odio sem nec elit. Pus sit amet fermentum. Donec id elit non mi porta gravida at
-							eget
-							metus.
-							Etiam porta sem
-							malesuada magna mollis euismod.ing</h3>
-						<div>
-							<p>Nulla vitae elit libero, a pharetra augue.</p>
-							<p><strong style="color: #6b6b6b;">New York Times</strong></p>
-						</div>
-					</swiper-slide>
-				</swiper-container>
-
-
-
-				<!-- <div class="mySwiper swiper-container">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<h3>HeadNulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus,
-							nisi erat
-							porttitor ligula, eget
-							lacinia odio sem nec elit. Pus sit amet fermentum. Donec id elit non mi porta gravida at
-							eget
-							metus.
-							Etiam porta sem
-							malesuada magna mollis euismod.ing</h3>
-						<div>
-							<p>Joshua Home</p>
-							<p><strong style="color: #6b6b6b;">New York Times</strong></p>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<h3>HeadNulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi
-							erat
-							porttitor ligula, eget
-							lacinia odio sem nec elit. Pus sit amet fermentum. Donec id elit non mi porta gravida at
-							eget
-							metus.
-							Etiam porta sem
-							malesuada magna mollis euismod.ing</h3>
-						<div>
-							<p>Nulla vitae elit libero, a pharetra augue.</p>
-							<p><strong style="color: #6b6b6b;">New York Times</strong></p>
+						<div class="itc-slider-item">
+							<h3>HeadNulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi
+								erat
+								porttitor ligula, eget
+								lacinia odio sem nec elit. Pus sit amet fermentum. Donec id elit non mi porta gravida at
+								eget
+								metus.
+								Etiam porta sem
+								malesuada magna mollis euismod.ing</h3>
+							<div>
+								<p>Nulla vitae elit libero, a pharetra augue.</p>
+								<p><strong style="color: #6b6b6b;">New York Times</strong></p>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="swiper-button-prev"></div>
-				<div class="swiper-button-next"></div> -->
+
+				<button class="itc-slider-btn itc-slider-btn-prev"></button>
+				<button class="itc-slider-btn itc-slider-btn-next"></button>
+				<ol class="itc-slider-indicators">
+					<li class="itc-slider-indicator" data-slide-to="0"></li>
+					<li class="itc-slider-indicator" data-slide-to="1"></li>
+				</ol>
 			</div>
 		</div>
 	</section>
 
-	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+	<script src="itc-slider.js"></script>
 	<script src="script.js"></script>
 </body>
 
