@@ -9,6 +9,7 @@
 
 .itc-slider-items {
   display: flex;
+  width: 90vw;
   transition: transform 0.5s ease;
   will-change: transform;
 }
@@ -20,25 +21,26 @@
 .itc-slider-item {
   flex: 0 0 100%;
   max-width: 100%;
-  user-select: none;
+  padding: 0 10vw 0 10vw;
   will-change: transform;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
-/* кнопки влево и вправо */
 .itc-slider-btn {
   position: absolute;
   top: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 50px;
-  /* color: #fff; */
   background-color: transparent;
-  text-align: center;
-  border: none;
-  transform: translateY(-50%);
   cursor: pointer;
+  scale: 200%;
+  margin: 20px;
+}
+
+.itc-slider-btn:active {
+  background-color: transparent;
 }
 
 .itc-slider-btn-hide {
@@ -55,7 +57,6 @@
 
 .itc-slider-btn:hover,
 .itc-slider-btn:focus {
-  /* color: #fff; */
   background-color: transparent;
   text-decoration: none;
   outline: 0;
@@ -70,25 +71,19 @@
   background-size: 100% 100%;
 }
 
-/* .itc-slider-btn-prev::before {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d6d6d6' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-}
-
-.itc-slider-btn-next::before {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d6d6d6' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-} */
-
 .itc-slider-indicators {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
   z-index: 15;
   display: flex;
   justify-content: center;
-  margin: 0 15%;
-  padding-left: 0;
-  list-style: none;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  padding-top: 10px;
+  height: 40px;
+  text-align: center;
 }
 
 .itc-slider-indicator {
@@ -97,7 +92,7 @@
   width: 7px;
   height: 7px;
   border-radius: 100%;
-  margin: 0 8px 3.5px;
+  margin: 65px 8px 3.5px;
   background-color: rgba(34, 34, 34, 0.4);
   cursor: pointer;
 }

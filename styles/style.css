@@ -5,6 +5,7 @@
     font-family: 'Gothic A1', sans-serif;
     color: #fff;
     scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -105,7 +106,7 @@ h4 {
 }
 
 .nav_logo {
-    margin-top: 5px;
+    margin-top: 7px;
     width: 120px;
 }
 
@@ -352,23 +353,18 @@ h4 {
     margin-bottom: 10vh;
 }
 
-swiper-slide {
-    text-align: center;
+.slider_ps {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.slider_container {
-    max-width: 0;
-    max-width: 90%;
-}
-
-swiper-slide {
-    padding: 5vh 20vw 10vh;
-}
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
-    color: #d6d6d6 !important;
+.slider_dash {
+    width: 30px;
+    height: 1px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    background-color: #d3d3d3;
 }
