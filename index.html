@@ -173,13 +173,12 @@
 		</div>
 
 		<div class="element-animation slider">
-			<img src="https://uploads-ssl.webflow.com/5af49de0dbb1e3637f2d8886/5b14481dda3c5c4b9bfe5147_quotation.svg"
-				width="58" alt="" class="quote-icon">
-
 			<div class="itc-slider" data-slider="itc-slider">
 				<div class="itc-slider-wrapper">
 					<div class="itc-slider-items">
 						<div class="itc-slider-item">
+							<img src="https://uploads-ssl.webflow.com/5af49de0dbb1e3637f2d8886/5b14481dda3c5c4b9bfe5147_quotation.svg"
+								width="58" alt="" class="quote-icon">
 							<h3>HeadNulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus,
 								nisi erat
 								porttitor ligula, eget
@@ -194,6 +193,8 @@
 							</div>
 						</div>
 						<div class="itc-slider-item">
+							<img src="https://uploads-ssl.webflow.com/5af49de0dbb1e3637f2d8886/5b14481dda3c5c4b9bfe5147_quotation.svg"
+								width="58" alt="" class="quote-icon">
 							<h3>HeadNulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi
 								erat
 								porttitor ligula, eget
@@ -210,8 +211,16 @@
 					</div>
 				</div>
 
-				<button class="itc-slider-btn itc-slider-btn-prev"></button>
-				<button class="itc-slider-btn itc-slider-btn-next"></button>
+				<svg class="itc-slider-btn itc-slider-btn-prev" xmlns="http://www.w3.org/2000/svg" width="24"
+					height="24" fill="#d6d6d6">
+					<path d="M15.293 3.293 6.586 12l8.707 8.707 1.414-1.414L9.414 12l7.293-7.293-1.414-1.414z" />
+				</svg>
+				<!-- <button class="itc-slider-btn itc-slider-btn-prev"></button> -->
+				<svg class="itc-slider-btn itc-slider-btn-next" xmlns="http://www.w3.org/2000/svg" width="24"
+					height="24" fill="#d6d6d6">
+					<path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z" />
+				</svg>
+				<!-- <button class="itc-slider-btn itc-slider-btn-next"></button> -->
 				<ol class="itc-slider-indicators">
 					<li class="itc-slider-indicator" data-slide-to="0"></li>
 					<li class="itc-slider-indicator" data-slide-to="1"></li>
@@ -219,6 +228,7 @@
 			</div>
 		</div>
 	</section>
+	<div class="arrowchik" style="content: '\e600';"></div>
 
 	<script src="itc-slider.js"></script>
 	<script src="script.js"></script>
