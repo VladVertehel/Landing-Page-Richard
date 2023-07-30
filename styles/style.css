@@ -554,18 +554,22 @@ input::placeholder {
         padding: 0;
     }
 
-    .header_img {
+    .header_img,
+    .header_arrow {
         position: relative;
-        left: 0vw;
-        top: auto;
-        right: 0vw;
-        bottom: 0px;
-        display: block;
-        width: 70%;
+    }
+
+    .header_content {
+        order: 1;
         height: auto;
-        margin-right: auto;
-        margin-bottom: 7vw;
-        margin-left: auto;
+    }
+
+    .header_img {
+        order: 2;
+    }
+
+    .header_arrow {
+        order: 3;
     }
 
     .header {
@@ -575,7 +579,7 @@ input::placeholder {
     }
 }
 
-@media (max-width: 750px) {
+/* @media (max-width: 750px) {
 
     .features_container.icons {
         margin-top: 5vh;
@@ -608,4 +612,4 @@ input::placeholder {
         right: 0;
         left: 30vw;
     }
-}
+} */
