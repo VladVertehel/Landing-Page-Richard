@@ -369,6 +369,10 @@ h4 {
     background-color: #d3d3d3;
 }
 
+.slider_text {
+    width: 50vw;
+}
+
 
 /* FEATURE BOTTOM */
 
@@ -536,4 +540,72 @@ input::placeholder {
 
 .footer-link:hover {
     color: #fff;
+}
+
+
+/* ADAPTIVE */
+
+@media (max-width: 991px) {
+    .slider_text {
+        width: 70vw;
+    }
+
+    .features_container {
+        padding: 0;
+    }
+
+    .header_img {
+        position: relative;
+        left: 0vw;
+        top: auto;
+        right: 0vw;
+        bottom: 0px;
+        display: block;
+        width: 70%;
+        height: auto;
+        margin-right: auto;
+        margin-bottom: 7vw;
+        margin-left: auto;
+    }
+
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding-top: 15vh;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .features_container.icons {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .features_icons.text {
+        width: 100%;
+        text-align: left;
+        align-items: start;
+    }
+
+    .features_container.numbers {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .features_numbers {
+        margin: 15px 0;
+    }
+
+    .header_img {
+        height: 70vh;
+        right: 0;
+        left: 30vw;
+    }
 }
