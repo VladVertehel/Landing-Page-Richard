@@ -652,8 +652,27 @@ input::placeholder {
     .header {
         align-items: center;
         padding-left: 0;
+        padding-right: 0;
+    }
+
+    .header_title {
+        margin-bottom: 40px;
+        width: 100%;
+        padding-right: 5vw;
+        padding-left: 5vw;
+    }
+
+    .header_img {
+        position: relative;
+        height: auto;
+        width: 70%;
+        margin-right: auto;
+        margin-bottom: 7vw;
+        margin-left: auto;
+        right: 0;
     }
 }
+
 
 /* @media (max-width: 750px) {
 
