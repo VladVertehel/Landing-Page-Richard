@@ -6,7 +6,6 @@
     color: #fff;
     scroll-behavior: smooth;
     -webkit-tap-highlight-color: transparent;
-    overflow-x: hidden;
 }
 
 body {
@@ -701,6 +700,10 @@ input::placeholder {
 
 
 @media (max-width: 750px) {
+    .header_img {
+        margin-bottom: 30px;
+    }
+
     .features_container.icons {
         margin-top: 5vh;
         margin-bottom: 5vh;
@@ -795,6 +798,7 @@ input::placeholder {
 
     .header_img {
         width: 80%;
+        margin-bottom: 60px;
     }
 
     .header_title {
@@ -808,15 +812,14 @@ input::placeholder {
 
     .features_container {
         flex-direction: column;
-        width: 100%;
         margin-top: 5vh;
         margin-bottom: 5vh;
     }
 
     .features_content {
         width: 100%;
-        padding-left: 10vw;
-        padding-right: 8vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
         order: 1;
     }
 
@@ -893,5 +896,14 @@ input::placeholder {
 
     .download-container {
         width: 90%;
+    }
+
+    .text {
+        margin-left: 0;
+    }
+
+    .bottom-section {
+        padding-right: 5vw;
+        padding-left: 5vw;
     }
 }
