@@ -650,7 +650,7 @@ input::placeholder {
     }
 
     .header {
-        align-items: center;
+        align-items: flex-start;
         padding-left: 0;
         padding-right: 0;
     }
@@ -671,11 +671,30 @@ input::placeholder {
         margin-left: auto;
         right: 0;
     }
+
+    .heading {
+        font-size: 8vw;
+    }
+
+    .subtitle {
+        font-size: 24px;
+        line-height: 31px;
+    }
+
+    h2 {
+        font-size: 34px;
+        line-height: 44px;
+    }
+
+    h3 {
+        font-size: 20px;
+        line-height: 32px;
+    }
 }
 
 
-/* @media (max-width: 750px) {
 
+@media (max-width: 750px) {
     .features_container.icons {
         margin-top: 5vh;
         margin-bottom: 5vh;
@@ -688,23 +707,62 @@ input::placeholder {
         width: 100%;
         text-align: left;
         align-items: start;
+        padding-left: 0;
+        padding-bottom: 30px;
     }
 
     .features_container.numbers {
-        margin-top: 5vh;
-        margin-bottom: 5vh;
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
     }
 
     .features_numbers {
-        margin: 15px 0;
+        width: 100%;
+        padding-bottom: 30px;
     }
 
-    .header_img {
-        height: 70vh;
-        right: 0;
-        left: 30vw;
+    .features_numbers:nth-child(3),
+    .features_numbers:nth-child(4) {
+        padding-bottom: 0;
     }
-} */
+
+    h2 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .about_container {
+        padding-right: 15vw;
+        padding-left: 15vw;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    input {
+        border-top-right-radius: 3px;
+        border-bottom-left-radius: 0px;
+        text-align: center;
+    }
+
+    .form-btn {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 3px;
+    }
+
+    .footer-links {
+        padding-right: 15vw;
+        padding-left: 15vw;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-link {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+}
